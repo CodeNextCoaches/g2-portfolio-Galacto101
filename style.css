@@ -2,6 +2,10 @@ body{
 color: grey;
 }
 
+#grad {
+    background: linear-gradient(black, black, #bcf4f0);
+}
+
 .button {
     background-color: #bcf4f0;
     color: grey;
@@ -12,6 +16,10 @@ color: grey;
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+hr{
+   border: 1px solid #ccc;
 }
 
 nav ul{
@@ -29,6 +37,19 @@ nav ul li{
   margin: 0px;
 }
 
+.project-image {
+  margin: 0 10px;
+  width: 200px;
+  height: 200px;
+  opacity: 0.75;
+  transition: box-shadow 0.5s, opacity 0.5s;
+}
+
+.project-image:hover{
+  box-shadow: -5px -5px 5px 0px #bcf4f0;
+  opacity: 1.0;
+}
+
 span {
   float: right;
 }
@@ -36,10 +57,23 @@ span {
 .icon {
   width: 50px;
   height: 50px;
+  opacity: 0.75;
+  transition: opacity 0.5s;
+}
+
+.icon-hover {
+  opacity: 1.0;
 }
 
 p{
   background-color: #bcf4f0;
   margin: 0 auto;
   width: 80%;
+}
+
+iframe{
+
+  width: 60%;
+  height: 400px;
+
 }
